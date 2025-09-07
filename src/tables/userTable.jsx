@@ -1,4 +1,6 @@
-export default function UserTable({ users, setEditingUser, setUserList }) {
+import { memo } from "react";
+
+export default memo(function UserTable({ users, setEditingUser, setUserList }) {
   const remove = "remove";
   const edit = "edit";
 
@@ -31,4 +33,4 @@ export default function UserTable({ users, setEditingUser, setUserList }) {
       </div>
     );
   });
-}
+}); 
