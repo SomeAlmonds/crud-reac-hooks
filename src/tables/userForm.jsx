@@ -12,7 +12,7 @@ export default function UserForm({ addUser, editingUser, userToEdit }) {
 
   function handleInputChange(e) {
     let { name, value } = e.target;
-    name.length > 30 ? (name = name.slice(0, 30)) : {};
+    
     value.length > 30 ? (value = value.slice(0, 30)) : {};
     setUser({ ...user, [name]: value });
   }
